@@ -8,7 +8,7 @@ window.onload = function () {
   let what = ['my homework', 'my phone', 'the car'];
   let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
-  function getRandomElement(arr) {
+  function getRandomWas(arr) {
     if (!arr || arr.length=== 0) {
       return undefined;
     }
@@ -16,10 +16,10 @@ window.onload = function () {
     return arr[randomIndex];
   }
 
-  const whoWas = getRandomElement(who);
-  const actionWas = getRandomElement(action);
-  const whatWas = getRandomElement(what);
-  const whenWas = getRandomElement(when);
+  const whoWas = getRandomWas(who);
+  const actionWas = getRandomWas(action);
+  const whatWas = getRandomWas(what);
+  const whenWas = getRandomWas(when);
 
   const randomExcuse = whoWas + " " + actionWas + " " + whatWas + " " + whenWas;
 
